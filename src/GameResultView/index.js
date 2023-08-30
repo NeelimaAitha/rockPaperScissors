@@ -6,10 +6,11 @@ import {
   ResultImageItem,
   ResultButtonContainer,
   PlayAgainButton,
-} from './styledComponent'
+} from './styledComponents'
 
 const GameResultView = props => {
   const {myChoice, apponentChoice, resultMessage, playAgain} = props
+  // eslint-disable-next-line no-unused-vars
   const {id, image} = apponentChoice
 
   const onClickPlayAgainButton = () => {

@@ -14,7 +14,7 @@ import {
   ParagraphScore,
   ScoreSpan,
   ItemsImagesContainer,
-  //
+  // eslint-disable-next-line no-unused-vars
   PlayAgainButton,
   PopUpContainer,
   PopUpButton,
@@ -22,7 +22,7 @@ import {
   RulesImage,
   CloseLineContainer,
   CloseLineButton,
-} from './styledComponent'
+} from './styledComponents'
 
 class Game extends Component {
   state = {
@@ -37,7 +37,7 @@ class Game extends Component {
 
   onGetResult = () => {
     const {myChoice, apponentChoice, resultMessage} = this.state
-
+    // eslint-disable-next-line no-unused-vars
     const {id, image} = apponentChoice
     return (
       <GameResultView
@@ -111,7 +111,7 @@ class Game extends Component {
   }
 
   onGetImages = () => {
-    const {choicesList} = this.state
+    const {choicesList} = this.props
     return (
       <ItemsImagesContainer>
         {choicesList.map(eachItem => (
@@ -126,7 +126,7 @@ class Game extends Component {
   }
 
   render() {
-    //
+    // eslint-disable-next-line no-unused-vars
     const {showResult, score, myChoice, apponentChoice} = this.state
 
     return (

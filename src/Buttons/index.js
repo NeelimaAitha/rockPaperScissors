@@ -1,4 +1,4 @@
-import {ButtonLiContainer, ButtonImage, ImageItem} from './styledComponent'
+import {ButtonLiContainer, ButtonImage, ImageItem} from './styledComponents'
 
 const Buttons = props => {
   const {buttonDetails, onGetId} = props
